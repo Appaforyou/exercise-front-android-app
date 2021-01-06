@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        nextAct.setOnClickListener {
-            val intent = Intent(this, ActivityForFragments::class.java)
+        openNextActivity.setOnClickListener {
+            val intent = Intent(this, OnBoardingActivity::class.java)
             startActivity(intent)
         }
     }

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class OnboardingFragment : Fragment() {
+class OnBoardingFragment : Fragment() {
 
 
 
