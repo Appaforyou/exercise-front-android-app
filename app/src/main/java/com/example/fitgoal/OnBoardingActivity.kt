@@ -2,6 +2,7 @@ package com.example.fitgoal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
 import androidx.viewpager2.widget.ViewPager2
 
 class OnBoardingActivity : AppCompatActivity() {
@@ -11,6 +12,7 @@ class OnBoardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_on_boarding)
         setOnboardingItems()
+
     }
 
     private  fun  setOnboardingItems() {
@@ -21,12 +23,12 @@ class OnBoardingActivity : AppCompatActivity() {
                     onboardingTextImage = R.drawable.fit_text_15
                 ),
                 OnboardingItem(
-                    onboardingFitImage = R.drawable.fit_image_25,
-                    onboardingTextImage = R.drawable.fit_text_25
-                ),
-                OnboardingItem(
                     onboardingFitImage = R.drawable.fit_image_35,
                     onboardingTextImage = R.drawable.fit_text_35
+                ),
+                OnboardingItem(
+                    onboardingFitImage = R.drawable.fit_image_25,
+                    onboardingTextImage = R.drawable.fit_text_25
                 )
             )
         )
