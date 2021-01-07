@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class OnBoardingFragment : Fragment() {
+class CreateAccountFragment : Fragment() {
 
 
 
@@ -16,7 +16,7 @@ class OnBoardingFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_onboarding, container, false).apply {
+        return inflater.inflate(R.layout.fragment_create_account, container, false).apply {
 
 
 

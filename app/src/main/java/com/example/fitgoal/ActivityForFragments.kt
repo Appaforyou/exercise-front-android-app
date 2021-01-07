@@ -12,7 +12,7 @@ class ActivityForFragments : AppCompatActivity() {
 
 
         supportFragmentManager.commit {
-            replace(R.id.frameLayoutFragment, OnBoardingFragment())
+            replace(R.id.frameLayoutFragment, SignUpFragment())
         }
     }
 }
