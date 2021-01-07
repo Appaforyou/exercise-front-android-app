@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.commit
-import kotlinx.android.synthetic.main.fragment_sign_up.view.*
+import kotlinx.android.synthetic.main.fragment_login.view.*
 
 
-class SignUpFragment : Fragment() {
+class LoginFragment : Fragment() {
 
     private fun nextFragment() {
         activity?.supportFragmentManager?.commit {
-            replace(R.id.frameLayoutFragment, CreateAccountFragment())
+            replace(R.id.frameLayoutFragment, FirstWizardFragment())
         }
     }
 
@@ -22,26 +22,24 @@ class SignUpFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_sign_up, container, false).apply {
+        return inflater.inflate(R.layout.fragment_login, container, false).apply {
 
-            googleImageButton.setOnClickListener {
+
+            googleImageButtonLogin.setOnClickListener {
                 nextFragment()
             }
 
-            facebookImageButton.setOnClickListener {
+            facebookImageButtonLogin.setOnClickListener {
                 nextFragment()
             }
 
-            twitterImageButton.setOnClickListener {
+            twitterImageButtonLogin.setOnClickListener {
                 nextFragment()
             }
 
-            createAccImageButton.setOnClickListener {
+            loginImageButton.setOnClickListener {
                 nextFragment()
             }
-
-
-
 
 
         }
