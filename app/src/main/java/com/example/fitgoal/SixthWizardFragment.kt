@@ -57,7 +57,7 @@ class SixthWizardFragment : Fragment() {
 
             falshivayaKnopka6.setOnClickListener {
                 activity?.supportFragmentManager?.commit {
-                    replace(R.id.frameLayoutFragment, FifthWizardFragment())
+                    replace(R.id.frameLayoutFragment, SeventeenthScreenFragment())
                 }
             }
 
