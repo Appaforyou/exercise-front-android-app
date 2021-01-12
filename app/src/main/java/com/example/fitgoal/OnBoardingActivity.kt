@@ -30,15 +30,15 @@ class OnBoardingActivity : AppCompatActivity() {
         onboardingItemsAdapter = OnboardingItemsAdapter(
             listOf(
                 OnboardingItem(
-                    onboardingFitImage = R.drawable.fit_image_15,
+                    onboardingFitImage = R.drawable.onboarding_transform_style2,
                     onboardingTextImage = R.drawable.fit_text_15
                 ),
                 OnboardingItem(
-                    onboardingFitImage = R.drawable.fit_image_35,
+                    onboardingFitImage = R.drawable.onboarding_transform_style1,
                     onboardingTextImage = R.drawable.fit_text_35
                 ),
                 OnboardingItem(
-                    onboardingFitImage = R.drawable.fit_image_25,
+                    onboardingFitImage = R.drawable.onboarding_transform_style3,
                     onboardingTextImage = R.drawable.fit_text_25
                 )
             )
