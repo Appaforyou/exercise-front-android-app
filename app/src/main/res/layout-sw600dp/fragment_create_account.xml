@@ -47,11 +47,11 @@
         android:letterSpacing="0.02"
         android:lineSpacingExtra="6sp"
         android:textColor="#3EC7E6"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="normal"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/space11"
-        tools:text=" Login" />
+        android:text=" Login" />
 
     <TextView
         android:id="@+id/textViewSignUp"
@@ -59,18 +59,18 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textSize="44sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space3"
-        android:text="Sign-up" />
+        android:text="SignupTablet" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:hint="Name"
-        android:textSize="15sp"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
 
 
@@ -81,9 +81,9 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:hint="Email"
-        android:textSize="15sp"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space4"
@@ -141,9 +141,9 @@
     <EditText
         android:id="@+id/editText2"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:hint="Password"
-        android:textSize="15sp"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space5"
@@ -152,9 +152,9 @@
     <EditText
         android:id="@+id/editText3"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:hint="Confirm Password"
-        android:textSize="15sp"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space6"
@@ -169,18 +169,18 @@
         android:letterSpacing="0.02"
         android:lineSpacingExtra="6sp"
         android:textColor="#858891"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space11"
-        tools:text="Already onboard?" />
+        android:text="Already onboard?" />
 
     <ImageView
         android:id="@+id/createAccImageButton2"
         android:layout_width="365dp"
-        android:layout_height="54dp"
+        android:layout_height="60dp"
         android:src="@drawable/button_primary_create_acc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

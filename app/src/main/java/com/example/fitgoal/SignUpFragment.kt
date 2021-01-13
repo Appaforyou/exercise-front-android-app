@@ -13,6 +13,7 @@ class SignUpFragment : Fragment() {
 
     private fun nextFragment() {
         activity?.supportFragmentManager?.commit {
+            addToBackStack(null)
             replace(R.id.frameLayoutFragment, CreateAccountFragment())
         }
     }

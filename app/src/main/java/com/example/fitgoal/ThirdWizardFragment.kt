@@ -28,6 +28,7 @@ class ThirdWizardFragment : Fragment() {
 
             falshivayaKnopka3.setOnClickListener {
                 activity?.supportFragmentManager?.commit {
+                    addToBackStack(null)
                     replace(R.id.frameLayoutFragment, FourthWizardFragment())
                 }
             }

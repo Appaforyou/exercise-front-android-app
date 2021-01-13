@@ -47,11 +47,11 @@
         android:letterSpacing="0.02"
         android:lineSpacingExtra="6sp"
         android:textColor="#3EC7E6"
-        android:textSize="15sp"
+        android:textSize="12sp"
         android:textStyle="normal"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/space11"
-        tools:text=" Login" />
+        app:layout_constraintTop_toBottomOf="@+id/space9"
+        android:text=" Login" />
 
     <TextView
         android:id="@+id/textViewSignUp"
@@ -59,11 +59,11 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space3"
-        android:text="Sign-up" />
+        android:text="SIGNUP" />
 
     <EditText
         android:id="@+id/editText4"
@@ -109,32 +109,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Space
-        android:id="@+id/space10"
+        android:id="@+id/space9"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".05"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
-
-    <Space
-        android:id="@+id/space11"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintHeight_percent=".025"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createAccImageButton2" />
+
+    <Space
+        android:id="@+id/space8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".025"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <Space
         android:id="@+id/space2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".05"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHeight_percent=".04"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewSignUp" />
 
@@ -169,28 +169,28 @@
         android:letterSpacing="0.02"
         android:lineSpacingExtra="6sp"
         android:textColor="#858891"
-        android:textSize="15sp"
+        android:textSize="12sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/space11"
-        tools:text="Already onboard?" />
+        app:layout_constraintTop_toBottomOf="@+id/space9"
+        android:text="Already onboard?" />
 
     <ImageView
         android:id="@+id/createAccImageButton2"
-        android:layout_width="365dp"
+        android:layout_width="260dp"
         android:layout_height="54dp"
         android:src="@drawable/button_primary_create_acc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/space10" />
+        app:layout_constraintTop_toBottomOf="@+id/space8" />
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="104dp"
+        android:layout_width="80dp"
 
-        android:layout_height="104dp"
+        android:layout_height="80dp"
 
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -198,4 +198,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

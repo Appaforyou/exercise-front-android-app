@@ -26,6 +26,7 @@ class SecondWizardFragment : Fragment() {
 
             falshivayaKnopka2.setOnClickListener {
                 activity?.supportFragmentManager?.commit {
+                    addToBackStack(null)
                     replace(R.id.frameLayoutFragment, ThirdWizardFragment())
                 }
             }
