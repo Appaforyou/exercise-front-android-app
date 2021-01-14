@@ -2,7 +2,9 @@ package com.example.fitgoal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
+import com.example.fitgoal.CurrentFragment.Companion.currentFragment
 
 
 class ActivityForFragments : AppCompatActivity() {
@@ -12,7 +14,13 @@ class ActivityForFragments : AppCompatActivity() {
 
 
         supportFragmentManager.commit {
-            replace(R.id.frameLayoutFragment, SignUpFragment())
+            replace(R.id.frameLayoutFragment, currentFragment.fragment)
         }
+    }
+}
+
+class CurrentFragment(var fragment: Fragment) {
+    companion object {
+        var currentFragment: CurrentFragment = CurrentFragment(SignUpFragment())
     }
 }

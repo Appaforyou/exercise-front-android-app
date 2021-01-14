@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.commit
+import com.example.fitgoal.CurrentFragment.Companion.currentFragment
 import kotlinx.android.synthetic.main.fragment_second_wizard.view.*
 import kotlinx.android.synthetic.main.fragment_third_wizard.view.*
 
@@ -29,7 +30,8 @@ class ThirdWizardFragment : Fragment() {
             falshivayaKnopka3.setOnClickListener {
                 activity?.supportFragmentManager?.commit {
                     addToBackStack(null)
-                    replace(R.id.frameLayoutFragment, FourthWizardFragment())
+                    currentFragment.fragment = FourthWizardFragment()
+                    replace(R.id.frameLayoutFragment, currentFragment.fragment)
                 }
             }
 

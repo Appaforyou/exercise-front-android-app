@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Hello!" />
+        android:text="Hello!" />
 
     <TextView
         android:id="@+id/textViewBeforeHello"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Start transforming the way
+        android:text="Start transforming the way
 you enjoy your life" />
 
     <TextView
@@ -62,7 +62,7 @@ you enjoy your life" />
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        tools:text=" Login" />
+        android:text=" Login" />
 
     <TextView
         android:id="@+id/textView2"
@@ -80,7 +80,7 @@ you enjoy your life" />
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Already onboard?" />
+        android:text="Already onboard?" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -97,7 +97,7 @@ you enjoy your life" />
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createAccImageButton"
-        tools:text="Or" />
+        android:text="Or" />
 
     <ImageView
         android:id="@+id/createAccImageButton"
