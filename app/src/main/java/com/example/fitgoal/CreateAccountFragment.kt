@@ -18,7 +18,7 @@ class CreateAccountFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-
+        activity?.window?.statusBarColor = resources.getColor(R.color.color_top3)
         retainInstance = true
 
         return inflater.inflate(R.layout.fragment_create_account, container, false).apply {

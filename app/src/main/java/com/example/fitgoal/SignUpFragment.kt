@@ -17,8 +17,6 @@ class SignUpFragment : Fragment() {
             addToBackStack(null)
             currentFragment.fragment = CreateAccountFragment()
             replace(R.id.frameLayoutFragment, currentFragment.fragment)
-
-
         }
     }
 
@@ -28,6 +26,7 @@ class SignUpFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        activity?.window?.statusBarColor = resources.getColor(R.color.color_top3)
         retainInstance = true
 
 

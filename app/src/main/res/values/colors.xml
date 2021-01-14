@@ -17,6 +17,9 @@
     <color name="custom_color_text_primary">#060906</color>
     <color name="custom_color_text_secondary">#464747</color>
     <color name="color_image">#AFE8EF</color>
+    <color name="color_top">#5373E0</color>
+    <color name="color_top2">#4986E1</color>
+    <color name="color_top3">#5968DF</color>
 
 </resources>
 

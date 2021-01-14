@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        window.statusBarColor = resources.getColor(R.color.color_top2)
 
         openNextActivity.setOnClickListener {
             val intent = Intent(this, OnBoardingActivity::class.java)

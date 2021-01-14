@@ -1,6 +1,8 @@
 package com.example.fitgoal
 
+import android.app.Activity
 import android.content.Intent
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
@@ -23,6 +25,11 @@ class OnBoardingActivity : AppCompatActivity() {
         setOnboardingItems()
         setupIndicators()
         setCurrentIndicator(0)
+
+        /**  set action bar color */
+//        supportActionBar?.setBackgroundDrawable(ColorDrawable(getResources().getColor(R.color.color_top)))
+        /**  set status bar color */
+        window.statusBarColor = resources.getColor(R.color.color_top)
 
     }
 
