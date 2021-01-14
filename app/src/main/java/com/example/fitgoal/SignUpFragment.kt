@@ -30,7 +30,9 @@ class SignUpFragment : Fragment() {
 
         retainInstance = true
 
+
         return inflater.inflate(R.layout.fragment_sign_up, container, false).apply {
+
 
             googleImageButton.setOnClickListener {
                 nextFragment()
@@ -49,11 +51,8 @@ class SignUpFragment : Fragment() {
             }
 
 
-
-
-
         }
+
+
     }
-
-
 }

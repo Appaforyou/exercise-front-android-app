@@ -21,6 +21,7 @@ class FifthWizardFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_fifth_wizard, container, false).apply {
+            retainInstance = true
 
 
             checkBoxGoalBody.setOnCheckedChangeListener { buttonView, isChecked ->

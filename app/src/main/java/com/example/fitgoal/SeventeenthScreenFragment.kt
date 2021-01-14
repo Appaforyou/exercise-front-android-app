@@ -65,6 +65,7 @@ class SeventeenthScreenFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_seventeenth_screen, container, false).apply {
+            retainInstance = true
 
             recyclerViewHor = findViewById(R.id.recyclerViewHorizontal)
             val linearLayoutManagerHorizontal = LinearLayoutManager(this.context)

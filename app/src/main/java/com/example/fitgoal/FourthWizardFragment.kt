@@ -18,6 +18,7 @@ class FourthWizardFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_fourth_wizard, container, false).apply {
+            retainInstance = true
 
 
             editTextWeigh.inputType = InputType.TYPE_CLASS_PHONE

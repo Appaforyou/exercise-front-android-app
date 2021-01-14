@@ -3,6 +3,8 @@ package com.example.fitgoal
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import com.example.fitgoal.CurrentFragment.Companion.currentFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,4 +18,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+
 }

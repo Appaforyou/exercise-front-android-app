@@ -21,6 +21,7 @@ class SecondWizardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_second_wizard, container, false).apply {
+            retainInstance = true
 
 
             editTextAge.inputType = InputType.TYPE_CLASS_PHONE

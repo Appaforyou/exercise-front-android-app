@@ -25,6 +25,7 @@ class FirstWizardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_first_wizard, container, false).apply {
+            retainInstance = true
 
 
             checkBoxFemale.setOnCheckedChangeListener { buttonView, isChecked ->
