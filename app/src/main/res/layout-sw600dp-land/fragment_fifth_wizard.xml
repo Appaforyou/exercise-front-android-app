@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_wizard"
+    tools:context=".FifthWizardFragment">
+
+
+    <Space
+        android:id="@+id/space13"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".05" />
+
+    <Space
+        android:id="@+id/space14"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bars_toolbar_1_action_button_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageBody4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:src="@drawable/illustrations_body_shape_4"
+        app:layout_constraintStart_toEndOf="@+id/space13"
+        app:layout_constraintTop_toBottomOf="@+id/space14" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGoalBody4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:button="@drawable/image_checkbox"
+        app:layout_constraintEnd_toEndOf="@+id/imageBody4"
+        app:layout_constraintTop_toTopOf="@+id/imageBody4" />
+
+    <ImageView
+        android:id="@+id/imageBody3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:src="@drawable/illustrations_body_shape_3"
+        app:layout_constraintEnd_toStartOf="@+id/space13"
+        app:layout_constraintTop_toBottomOf="@+id/space14" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGoalBody3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:button="@drawable/image_checkbox"
+        app:layout_constraintEnd_toEndOf="@+id/imageBody3"
+        app:layout_constraintTop_toTopOf="@+id/imageBody3" />
+
+    <ImageView
+        android:id="@+id/imageGoalBody2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:src="@drawable/illustrations_body_shape_2"
+        app:layout_constraintBottom_toTopOf="@+id/space14"
+        app:layout_constraintStart_toEndOf="@+id/space13" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGoalBody2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:button="@drawable/image_checkbox"
+        app:layout_constraintEnd_toEndOf="@+id/imageGoalBody2"
+        app:layout_constraintTop_toTopOf="@+id/imageGoalBody2" />
+
+    <ImageView
+        android:id="@+id/imageGoalBody"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:src="@drawable/illustrations_body_shape_1"
+        app:layout_constraintBottom_toTopOf="@+id/space14"
+        app:layout_constraintEnd_toStartOf="@+id/space13" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGoalBody"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:button="@drawable/image_checkbox"
+        app:layout_constraintEnd_toEndOf="@+id/imageGoalBody"
+        app:layout_constraintTop_toTopOf="@+id/imageGoalBody" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/body_your_level"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/falshivayaKnopka5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
