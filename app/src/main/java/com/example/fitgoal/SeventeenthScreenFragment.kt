@@ -66,6 +66,7 @@ class SeventeenthScreenFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_seventeenth_screen, container, false).apply {
             retainInstance = true
+            activity?.window?.statusBarColor = resources.getColor(R.color.color_top5)
 
             recyclerViewHor = findViewById(R.id.recyclerViewHorizontal)
             val linearLayoutManagerHorizontal = LinearLayoutManager(this.context)

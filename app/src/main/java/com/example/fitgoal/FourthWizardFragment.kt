@@ -18,6 +18,7 @@ class FourthWizardFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_fourth_wizard, container, false).apply {
             retainInstance = true
+            activity?.window?.statusBarColor = resources.getColor(R.color.color_top4)
 
 
             editTextWeigh.inputType = InputType.TYPE_CLASS_PHONE

@@ -21,6 +21,8 @@ class ThirdWizardFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_third_wizard, container, false).apply {
+            retainInstance = true
+            activity?.window?.statusBarColor = resources.getColor(R.color.color_top4)
 
 
 

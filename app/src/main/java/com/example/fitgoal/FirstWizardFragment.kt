@@ -21,6 +21,7 @@ class FirstWizardFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_first_wizard, container, false).apply {
             retainInstance = true
+            activity?.window?.statusBarColor = resources.getColor(R.color.color_top4)
 
 
             checkBoxFemale.setOnCheckedChangeListener { buttonView, isChecked ->

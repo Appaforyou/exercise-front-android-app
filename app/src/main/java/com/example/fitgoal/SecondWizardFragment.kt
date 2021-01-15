@@ -21,6 +21,7 @@ class SecondWizardFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_second_wizard, container, false).apply {
             retainInstance = true
+            activity?.window?.statusBarColor = resources.getColor(R.color.color_top4)
 
 
             editTextAge.inputType = InputType.TYPE_CLASS_PHONE
