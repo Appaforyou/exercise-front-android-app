@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FitGoal">
+        android:theme="@style/Theme.FitGoal.Splash">
         <activity android:name=".OnBoardingActivity"></activity>
         <activity android:name=".ActivityForFragments" />
         <activity android:name=".MainActivity">
