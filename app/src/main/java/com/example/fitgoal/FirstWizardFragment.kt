@@ -7,17 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.commit
-import com.example.fitgoal.CurrentFragment.Companion.currentFragment
 import kotlinx.android.synthetic.main.fragment_first_wizard.view.*
 import kotlinx.android.synthetic.main.image_with_checkbox.view.*
 import kotlinx.android.synthetic.main.image_with_checkbox.view.imageViewFemale
 
 
 class FirstWizardFragment : Fragment() {
-
-
-
-
 
 
     override fun onCreateView(
@@ -49,8 +44,7 @@ class FirstWizardFragment : Fragment() {
             falshivayaKnopka.setOnClickListener {
                 activity?.supportFragmentManager?.commit {
                     addToBackStack(null)
-                    currentFragment.fragment = SecondWizardFragment()
-                    replace(R.id.frameLayoutFragment, currentFragment.fragment)
+                    replace(R.id.frameLayoutFragment, SecondWizardFragment())
                 }
             }
 

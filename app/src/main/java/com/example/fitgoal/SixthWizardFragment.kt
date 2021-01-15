@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.commit
-import com.example.fitgoal.CurrentFragment.Companion.currentFragment
 import kotlinx.android.synthetic.main.fragment_sixth.view.*
 
 
@@ -60,8 +59,7 @@ class SixthWizardFragment : Fragment() {
             falshivayaKnopka6.setOnClickListener {
                 activity?.supportFragmentManager?.commit {
                     addToBackStack(null)
-                    currentFragment.fragment = SeventeenthScreenFragment()
-                    replace(R.id.frameLayoutFragment, currentFragment.fragment)
+                    replace(R.id.frameLayoutFragment, SeventeenthScreenFragment())
                 }
             }
 
