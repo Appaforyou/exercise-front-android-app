@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signUpFragment">
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.fitgoal.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.example.fitgoal.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.fitgoal.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_firstWizardFragment"
+            app:destination="@id/firstWizardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstWizardFragment"
+        android:name="com.example.fitgoal.FirstWizardFragment"
+        android:label="fragment_first_wizard"
+        tools:layout="@layout/fragment_first_wizard" >
+        <action
+            android:id="@+id/action_firstWizardFragment_to_secondWizardFragment2"
+            app:destination="@id/secondWizardFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifthWizardFragment2"
+        android:name="com.example.fitgoal.FifthWizardFragment"
+        android:label="fragment_fifth_wizard"
+        tools:layout="@layout/fragment_fifth_wizard" />
+    <fragment
+        android:id="@+id/fourthWizardFragment2"
+        android:name="com.example.fitgoal.FourthWizardFragment"
+        android:label="fragment_fourth_wizard"
+        tools:layout="@layout/fragment_fourth_wizard" />
+    <fragment
+        android:id="@+id/secondWizardFragment2"
+        android:name="com.example.fitgoal.SecondWizardFragment"
+        android:label="fragment_second_wizard"
+        tools:layout="@layout/fragment_second_wizard" >
+        <action
+            android:id="@+id/action_secondWizardFragment2_to_thirdWizardFragment3"
+            app:destination="@id/thirdWizardFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/seventeenthScreenFragment"
+        android:name="com.example.fitgoal.SeventeenthScreenFragment"
+        android:label="fragment_seventeenth_screen"
+        tools:layout="@layout/fragment_seventeenth_screen" />
+    <fragment
+        android:id="@+id/sixthWizardFragment2"
+        android:name="com.example.fitgoal.SixthWizardFragment"
+        android:label="fragment_sixth"
+        tools:layout="@layout/fragment_sixth" />
+    <fragment
+        android:id="@+id/thirdWizardFragment3"
+        android:name="com.example.fitgoal.ThirdWizardFragment"
+        android:label="fragment_third_wizard"
+        tools:layout="@layout/fragment_third_wizard" >
+        <action
+            android:id="@+id/action_thirdWizardFragment3_to_fourthWizardFragment2"
+            app:destination="@id/fourthWizardFragment2" />
+    </fragment>
+</navigation>
