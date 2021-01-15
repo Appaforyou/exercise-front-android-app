@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
-    <Space
+    с<Space
         android:id="@+id/space3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -179,10 +179,11 @@
 
     <ImageView
         android:id="@+id/createAccImageButton2"
-        android:layout_width="260dp"
+        android:layout_width="0dp"
         android:layout_height="54dp"
         android:src="@drawable/button_primary_create_acc"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent=".80"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space8" />
 

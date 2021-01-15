@@ -47,7 +47,7 @@
         android:letterSpacing="0.02"
         android:lineSpacingExtra="6sp"
         android:textColor="#3EC7E6"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/space11"
@@ -70,24 +70,24 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:hint="Name"
-        android:textSize="23sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
 
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space2"
-        app:layout_constraintWidth_percent=".80" />
+        app:layout_constraintWidth_percent=".60" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:hint="Email"
-        android:textSize="23sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space4"
-        app:layout_constraintWidth_percent=".80" />
+        app:layout_constraintWidth_percent=".60" />
 
     <Space
         android:id="@+id/space4"
@@ -143,22 +143,22 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:hint="Password"
-        android:textSize="23sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space5"
-        app:layout_constraintWidth_percent=".80" />
+        app:layout_constraintWidth_percent=".60" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:hint="Confirm Password"
-        android:textSize="23sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space6"
-        app:layout_constraintWidth_percent=".80" />
+        app:layout_constraintWidth_percent=".60" />
 
     <TextView
         android:id="@+id/textView3"
@@ -169,7 +169,7 @@
         android:letterSpacing="0.02"
         android:lineSpacingExtra="6sp"
         android:textColor="#858891"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
