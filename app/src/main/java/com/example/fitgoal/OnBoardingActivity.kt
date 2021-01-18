@@ -1,22 +1,19 @@
 package com.example.fitgoal
 
-import android.app.Activity
 import android.content.Intent
-import android.graphics.drawable.ColorDrawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
-import android.view.Window
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 
 class OnBoardingActivity : AppCompatActivity() {
 
-    private  lateinit var onboardingItemsAdapter: OnboardingItemsAdapter
+    private lateinit var onboardingItemsAdapter: OnboardingItemsAdapter
     private lateinit var indicatorsContainer: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,10 +27,9 @@ class OnBoardingActivity : AppCompatActivity() {
 //        supportActionBar?.setBackgroundDrawable(ColorDrawable(getResources().getColor(R.color.color_top)))
         /**  set status bar color */
         window.statusBarColor = resources.getColor(R.color.color_top)
-
     }
 
-    private  fun  setOnboardingItems() {
+    private fun setOnboardingItems() {
         onboardingItemsAdapter = OnboardingItemsAdapter(
             listOf(
                 OnboardingItem(
@@ -53,12 +49,12 @@ class OnBoardingActivity : AppCompatActivity() {
         val onboardingViewPager = findViewById<ViewPager2>(R.id.onboardingViewPager)
         onboardingViewPager.adapter = onboardingItemsAdapter
         onboardingViewPager.registerOnPageChangeCallback(object :
-        ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-                setCurrentIndicator(position)
-            }
-        })
+                ViewPager2.OnPageChangeCallback() {
+                override fun onPageSelected(position: Int) {
+                    super.onPageSelected(position)
+                    setCurrentIndicator(position)
+                }
+            })
         (onboardingViewPager.getChildAt(0) as RecyclerView).overScrollMode =
             RecyclerView.OVER_SCROLL_NEVER
 
@@ -85,7 +81,7 @@ class OnBoardingActivity : AppCompatActivity() {
         val indicators = arrayOfNulls<ImageView>(onboardingItemsAdapter.itemCount)
         val layoutParams: LinearLayout.LayoutParams =
             LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT)
-        layoutParams.setMargins(8,0,8,0)
+        layoutParams.setMargins(8, 0, 8, 0)
         for (i in indicators.indices) {
             indicators[i] = ImageView(applicationContext)
             indicators[i]?.let {
@@ -99,7 +95,6 @@ class OnBoardingActivity : AppCompatActivity() {
                 indicatorsContainer.addView(it)
             }
         }
-
     }
 
     private fun setCurrentIndicator(position: Int) {

@@ -8,12 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class VerticalAdapter(
     val images: List<DataVerticalCard>
-): RecyclerView.Adapter<VerticalAdapter.VerticalViewHolder>() {
+) : RecyclerView.Adapter<VerticalAdapter.VerticalViewHolder>() {
 
-
-    inner class VerticalViewHolder: RecyclerView.ViewHolder{
+    inner class VerticalViewHolder : RecyclerView.ViewHolder {
         val imageVertical: ImageView
-        constructor(item: View): super(item) {
+        constructor(item: View) : super(item) {
             imageVertical = item.findViewById(R.id.imageVertical)
         }
     }
@@ -32,5 +31,4 @@ class VerticalAdapter(
     override fun getItemCount(): Int {
         return images.size
     }
-
 }

@@ -8,11 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class HorizontalAdapter(
     val images: List<DataHorizontalCard>
-): RecyclerView.Adapter<HorizontalAdapter.HorizontalViewHolder>() {
+) : RecyclerView.Adapter<HorizontalAdapter.HorizontalViewHolder>() {
 
-    inner class HorizontalViewHolder: RecyclerView.ViewHolder{
+    inner class HorizontalViewHolder : RecyclerView.ViewHolder {
         val imageHorizontal: ImageView
-        constructor(item: View): super(item) {
+        constructor(item: View) : super(item) {
             imageHorizontal = item.findViewById(R.id.imageHorizontal)
         }
     }
@@ -31,6 +31,4 @@ class HorizontalAdapter(
     override fun getItemCount(): Int {
         return images.size
     }
-
-
 }

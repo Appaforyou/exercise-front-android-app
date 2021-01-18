@@ -1,16 +1,14 @@
 package com.example.fitgoal
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-
 class SeventeenthScreenFragment : Fragment() {
-
 
     lateinit var recyclerViewHor: RecyclerView
     lateinit var recyclerViewVert: RecyclerView
@@ -60,7 +58,8 @@ class SeventeenthScreenFragment : Fragment() {
     )
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
@@ -77,7 +76,6 @@ class SeventeenthScreenFragment : Fragment() {
 
             recyclerViewHor.adapter = adapterHorizontal
 
-
             recyclerViewVert = findViewById(R.id.recyclerViewVertical)
             val linearLayoutManagerVertical = LinearLayoutManager(this.context)
             recyclerViewVert.layoutManager = linearLayoutManagerVertical
@@ -85,12 +83,6 @@ class SeventeenthScreenFragment : Fragment() {
             val adapterVertical = VerticalAdapter(imagesVertical)
 
             recyclerViewVert.adapter = adapterVertical
-
-
         }
     }
-
-
-
-
 }
