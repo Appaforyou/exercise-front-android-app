@@ -61,10 +61,7 @@ class FifthWizardFragment : Fragment() {
             }
 
             falshivayaKnopka5.setOnClickListener {
-                activity?.supportFragmentManager?.commit {
-                    addToBackStack(null)
-                    replace(R.id.frameLayoutFragment, SixthWizardFragment())
-                }
+                (activity as ActivityForFragments).navController.navigate(R.id.action_fifthWizardFragment2_to_sixthWizardFragment2)
             }
 
 

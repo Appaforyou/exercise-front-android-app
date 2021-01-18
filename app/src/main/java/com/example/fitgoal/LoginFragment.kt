@@ -12,10 +12,7 @@ import kotlinx.android.synthetic.main.fragment_login.view.*
 class LoginFragment : Fragment() {
 
     private fun nextFragment() {
-        activity?.supportFragmentManager?.commit {
-            addToBackStack(null)
-            replace(R.id.frameLayoutFragment, FirstWizardFragment())
-        }
+        (activity as ActivityForFragments).navController.navigate(R.id.action_loginFragment_to_firstWizardFragment)
     }
 
 

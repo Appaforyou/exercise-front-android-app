@@ -24,11 +24,7 @@ class CreateAccountFragment : Fragment() {
 
 
             createAccImageButton2.setOnClickListener {
-                activity?.supportFragmentManager?.commit {
-                    addToBackStack(null)
-                    replace(R.id.frameLayoutFragment, LoginFragment())
-
-                }
+                (activity as ActivityForFragments).navController.navigate(R.id.action_createAccountFragment_to_loginFragment)
             }
 
 

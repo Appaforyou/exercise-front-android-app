@@ -45,12 +45,20 @@
         android:id="@+id/fifthWizardFragment2"
         android:name="com.example.fitgoal.FifthWizardFragment"
         android:label="fragment_fifth_wizard"
-        tools:layout="@layout/fragment_fifth_wizard" />
+        tools:layout="@layout/fragment_fifth_wizard" >
+        <action
+            android:id="@+id/action_fifthWizardFragment2_to_sixthWizardFragment2"
+            app:destination="@id/sixthWizardFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/fourthWizardFragment2"
         android:name="com.example.fitgoal.FourthWizardFragment"
         android:label="fragment_fourth_wizard"
-        tools:layout="@layout/fragment_fourth_wizard" />
+        tools:layout="@layout/fragment_fourth_wizard" >
+        <action
+            android:id="@+id/action_fourthWizardFragment2_to_fifthWizardFragment2"
+            app:destination="@id/fifthWizardFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/secondWizardFragment2"
         android:name="com.example.fitgoal.SecondWizardFragment"
@@ -69,7 +77,11 @@
         android:id="@+id/sixthWizardFragment2"
         android:name="com.example.fitgoal.SixthWizardFragment"
         android:label="fragment_sixth"
-        tools:layout="@layout/fragment_sixth" />
+        tools:layout="@layout/fragment_sixth" >
+        <action
+            android:id="@+id/action_sixthWizardFragment2_to_seventeenthScreenFragment"
+            app:destination="@id/seventeenthScreenFragment" />
+    </fragment>
     <fragment
         android:id="@+id/thirdWizardFragment3"
         android:name="com.example.fitgoal.ThirdWizardFragment"

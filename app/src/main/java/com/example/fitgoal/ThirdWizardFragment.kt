@@ -29,10 +29,7 @@ class ThirdWizardFragment : Fragment() {
             editTextHeight.inputType = InputType.TYPE_CLASS_PHONE
 
             falshivayaKnopka3.setOnClickListener {
-                activity?.supportFragmentManager?.commit {
-                    addToBackStack(null)
-                    replace(R.id.frameLayoutFragment, FourthWizardFragment())
-                }
+                (activity as ActivityForFragments).navController.navigate(R.id.action_thirdWizardFragment3_to_fourthWizardFragment2)
             }
 
 

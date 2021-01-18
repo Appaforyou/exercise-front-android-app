@@ -27,10 +27,7 @@ class SecondWizardFragment : Fragment() {
             editTextAge.inputType = InputType.TYPE_CLASS_PHONE
 
             falshivayaKnopka2.setOnClickListener {
-                activity?.supportFragmentManager?.commit {
-                    addToBackStack(null)
-                    replace(R.id.frameLayoutFragment, ThirdWizardFragment())
-                }
+                (activity as ActivityForFragments).navController.navigate(R.id.action_secondWizardFragment2_to_thirdWizardFragment3)
             }
 
 

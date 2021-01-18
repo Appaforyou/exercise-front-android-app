@@ -6,17 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.commit
+import kotlinx.android.synthetic.main.fragment_sign_up.*
 import kotlinx.android.synthetic.main.fragment_sign_up.view.*
 
 
 class SignUpFragment : Fragment() {
 
-    private fun nextFragment() {
-        activity?.supportFragmentManager?.commit {
-            addToBackStack(null)
-            replace(R.id.frameLayoutFragment, CreateAccountFragment())
-        }
-    }
 
 
     override fun onCreateView(
@@ -31,25 +26,29 @@ class SignUpFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_sign_up, container, false).apply {
 
 
-            googleImageButton.setOnClickListener {
-                nextFragment()
-            }
-
-            facebookImageButton.setOnClickListener {
-                nextFragment()
-            }
-
-            twitterImageButton.setOnClickListener {
-                nextFragment()
-            }
-
-            createAccImageButton.setOnClickListener {
-                nextFragment()
-            }
-
-
         }
 
+
+    }
+
+
+    override fun onStart() {
+        super.onStart()
+        googleImageButton.setOnClickListener {
+            (activity as ActivityForFragments).navController.navigate(R.id.action_signUpFragment_to_createAccountFragment)
+        }
+
+        facebookImageButton.setOnClickListener {
+            (activity as ActivityForFragments).navController.navigate(R.id.action_signUpFragment_to_createAccountFragment)
+        }
+
+        twitterImageButton.setOnClickListener {
+            (activity as ActivityForFragments).navController.navigate(R.id.action_signUpFragment_to_createAccountFragment)
+        }
+
+        createAccImageButton.setOnClickListener {
+            (activity as ActivityForFragments).navController.navigate(R.id.action_signUpFragment_to_createAccountFragment)
+        }
 
     }
 }

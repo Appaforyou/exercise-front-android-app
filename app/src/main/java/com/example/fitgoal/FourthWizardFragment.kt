@@ -24,10 +24,7 @@ class FourthWizardFragment : Fragment() {
             editTextWeigh.inputType = InputType.TYPE_CLASS_PHONE
 
             falshivayaKnopka4.setOnClickListener {
-                activity?.supportFragmentManager?.commit {
-                    addToBackStack(null)
-                    replace(R.id.frameLayoutFragment, FifthWizardFragment())
-                }
+                (activity as ActivityForFragments).navController.navigate(R.id.action_fourthWizardFragment2_to_fifthWizardFragment2)
             }
 
 

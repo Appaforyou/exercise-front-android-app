@@ -43,10 +43,7 @@ class FirstWizardFragment : Fragment() {
             }
 
             falshivayaKnopka.setOnClickListener {
-                activity?.supportFragmentManager?.commit {
-                    addToBackStack(null)
-                    replace(R.id.frameLayoutFragment, SecondWizardFragment())
-                }
+                (activity as ActivityForFragments).navController.navigate(R.id.action_firstWizardFragment_to_secondWizardFragment2)
             }
 
 
