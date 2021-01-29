@@ -86,6 +86,10 @@ dependencies {
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
     androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
 
+    implementation 'org.koin:koin-android:1.0.2'
+    implementation 'org.koin:koin-android-viewmodel:1.0.2'
+    implementation 'org.koin:koin-androidx-scope:1.0.2'
+
 
 
 
